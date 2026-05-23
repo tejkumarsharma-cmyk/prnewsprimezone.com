@@ -103,15 +103,11 @@ export function SinglePressRelease({ post, relatedPosts }: SinglePressReleasePro
       <main className="mx-auto max-w-4xl px-4 py-8 sm:px-6 lg:px-8 lg:py-12">
         {/* Article Header */}
         <article className="space-y-8">
-          {/* Category and Date */}
+          {/* Category and Author */}
           <div className="flex flex-wrap items-center gap-4 text-sm">
             <span className="rounded-full bg-[#D1512D] px-3 py-1 text-xs font-semibold text-white">
               {getCategory()}
             </span>
-            <div className="flex items-center gap-2 text-gray-600">
-              <Calendar className="h-4 w-4" />
-              {formatDate(post.publishedAt)}
-            </div>
             <div className="flex items-center gap-2 text-gray-600">
               <User className="h-4 w-4" />
               {getAuthorName()}
