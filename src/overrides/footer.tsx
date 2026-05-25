@@ -3,6 +3,7 @@ import { SITE_CONFIG } from '@/lib/site-config'
 
 export const FOOTER_OVERRIDE_ENABLED = true
 
+// Synchronous — no async data fetching to avoid async-client-component conflict
 export function FooterOverride() {
   return (
     <footer className="border-t border-neutral-200 bg-white">
